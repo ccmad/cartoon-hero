@@ -18,14 +18,18 @@ h2{
 
 .big{
 	font-size: 60px;
+	background-color: deeppink;
 }
 
 .uppercase{
 	text-transform: uppercase;
+	/* background-color: darkkhaki; */
+
 }
 
 .big.uppercase{
 	color: navy;
+	background-color: mediumorchid;
 }
 
 .uppercase.big{
@@ -34,4 +38,8 @@ h2{
 
 h1 span{
 	color: violet;
+}
+
+h3{
+	background-color: blue;
 }
