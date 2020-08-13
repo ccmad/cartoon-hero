@@ -1,16 +1,12 @@
 body{
-	margin: 0;
+	margin: 10px;
 	background-color: black;
 	color: white;
 	font-family: 'Carrois Gothic SC', sans-serif;
 }
 
-a{
-	color: lightgrey;
-}
-
 header{
-	text-align: right;
+	text-align: center;
 }
 
 header img{
@@ -21,42 +17,79 @@ header img{
 }
 
 h1, h2, h3, h4{
-	background-color: yellow;
 	color: black;
-	font-family: 'Carrois Gothic SC', sans-serif;
+	font-family: 'Bangers', cursive;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	display: inline-block;
 	font-size: 100px;
 }
 h2{
 	font-size: 50px;
 }
+
 h3{
 	font-size: 40px;
 }
+
 h4{
 	font-size: 30px;
 }
 
-p{
-	font-size: 20px
+h1 span, h2 span{
+	background-color: yellow;
+	padding-left: 20px;
+	padding-right: 25px;
 }
+h3 span{
+	background-color: yellow;
+	color: black;
+}
+
+h4.friend-text span{
+	background-color: yellow;
+	color: black;
+}
+
+h3.enemy-text span{
+	background-color: red;
+	color: white;
+}
+
+h4.enemy-text span{
+	background-color: red;
+	color: white;
+	display: inline-block;
+}
+
+
+
+p{
+	color: white;
+	font-size: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	width: 75%
+}
+
+#batman{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 
 a{
 	text-decoration: none;
+	color: lightgrey;
 }
 
 a:hover{
 	background-color: yellow;
 	color: black;
 }
-
-.enemy-text{
-	color: white;
-	background-color: red;
-}
-
 
 .round{
 	border-radius: 150px;
@@ -73,7 +106,20 @@ a:hover{
 	border: 5px solid gold;
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-
-
+h5{
+	text-align: right;
+}
